@@ -34,8 +34,8 @@ namespace InformatykaApp1
 
             foreach (int x in Oceny)
             {
-                suma =+ Oceny[x];
-            }
+                suma = suma + x;
+            } 
 
             return (suma / Oceny.Length);
         }

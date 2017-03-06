@@ -23,9 +23,17 @@ namespace InformatykaApp1
                     )
                 );
 
-            Wojtek.Oceny[] = [2, 3];
+            int[] tablica;
+            tablica = new int[] {2, 3, 5 };
+
+            Wojtek.Oceny = new int[] { 5, 6, 5, 3, 2, 6 };
 
             Console.WriteLine(Wojtek.Adres_zamieszkania.Ulica);
+            foreach(int x in Wojtek.Oceny)
+            {
+                Console.WriteLine(x);
+            }
+            Console.WriteLine(Wojtek.Srednia_ocen());
             Console.ReadKey();
         }
     }
