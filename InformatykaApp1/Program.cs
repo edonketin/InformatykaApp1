@@ -35,6 +35,8 @@ namespace InformatykaApp1
             }
             Console.WriteLine(Wojtek.Srednia_ocen());
             Console.ReadKey();
+
+            // Dodaje kappa komentarz
         }
     }
 }
