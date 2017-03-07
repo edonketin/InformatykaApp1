@@ -51,6 +51,8 @@ namespace InformatykaApp1
             Console.WriteLine(Mieszko.Srednia_ocen());
             Console.WriteLine(Truskawki.Srednia_ocen_klasy());
             Console.ReadKey();
+
+            // Dodaje kappa komentarz
         }
     }
 }
