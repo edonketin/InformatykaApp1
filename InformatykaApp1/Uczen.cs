@@ -36,8 +36,12 @@ namespace InformatykaApp1
             {
                 suma = suma + x;
             } 
-
             return (suma / Oceny.Length);
+        }
+
+        public int Wiek(int Rok)
+        {
+            return ((Rok - Data_urodzenia) * 12);
         }
     }
 }

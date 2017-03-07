@@ -22,18 +22,34 @@ namespace InformatykaApp1
                     Numer_domu: 5
                     )
                 );
+            Uczen Mieszko = new Uczen
+                (
+                Imie: "Śmieszko",
+                Nazwisko: "Wawrzyniak",
+                Data_urodzenia: 1998,
+                Adres_zamieszkania: new Zameldowanie
+                    (
+                    Ulica: "Kupa",
+                    Kod_pocztowy: 64100,
+                    Numer_domu: 9
+                    )
+                );
 
-            int[] tablica;
-            tablica = new int[] {2, 3, 5 };
+            Klasa Truskawki = new Klasa
+                (
+                Nazwa_klasy: "III D",
+                Nazwisko_nauczyciela: "Pobreżny",
+                Rocznik: 1998
+                );
 
+            Truskawki.Spis_uczniow = new Uczen[] { Wojtek, Mieszko };
             Wojtek.Oceny = new int[] { 5, 6, 5, 3, 2, 6 };
+            Mieszko.Oceny = new int[] { 3, 2, 5, 3, 2, 1 };
 
             Console.WriteLine(Wojtek.Adres_zamieszkania.Ulica);
-            foreach(int x in Wojtek.Oceny)
-            {
-                Console.WriteLine(x);
-            }
             Console.WriteLine(Wojtek.Srednia_ocen());
+            Console.WriteLine(Mieszko.Srednia_ocen());
+            Console.WriteLine(Truskawki.Srednia_ocen_klasy());
             Console.ReadKey();
         }
     }
