@@ -44,12 +44,13 @@ namespace InformatykaApp1
 
             Truskawki.Spis_uczniow = new Uczen[] { Wojtek, Mieszko };
             Wojtek.Oceny = new int[] { 5, 6, 5, 3, 2, 6 };
-            Mieszko.Oceny = new int[] { 3, 2, 5, 3, 2, 1 };
+            Mieszko.Oceny = new int[] { 3, 2, 5, 3, 2, 1, 2 , 6 };
 
             Console.WriteLine(Wojtek.Adres_zamieszkania.Ulica);
             Console.WriteLine(Wojtek.Srednia_ocen());
             Console.WriteLine(Mieszko.Srednia_ocen());
             Console.WriteLine(Truskawki.Srednia_ocen_klasy());
+            Truskawki.Wypisz_uczniow();
             Console.ReadKey();
 
             // Dodaje kappa komentarz

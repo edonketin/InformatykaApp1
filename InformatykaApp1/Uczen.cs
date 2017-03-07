@@ -32,11 +32,18 @@ namespace InformatykaApp1
         {
             double suma = 0;
 
-            foreach (int x in Oceny)
+            if(Oceny.Length == 0)
             {
-                suma = suma + x;
-            } 
-            return (suma / Oceny.Length);
+                return 1;
+            }
+            else
+            {
+                foreach (int x in Oceny)
+                {
+                    suma = suma + x;
+                }
+                return (suma / Oceny.Length);
+            }
         }
 
         public int Wiek(int Rok)

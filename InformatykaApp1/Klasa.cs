@@ -35,5 +35,18 @@ namespace InformatykaApp1
             }
             return (suma / Spis_uczniow.Length);
         }
+
+        public void Wypisz_uczniow()
+        {
+            foreach (Uczen x in Spis_uczniow)
+            {
+                Console.WriteLine
+                    (
+                    x.Imie +" " + 
+                    x.Nazwisko + " " + 
+                    x.Adres_zamieszkania.Ulica
+                    );
+            }
+        }
     }
 }
